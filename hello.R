@@ -1,12 +1,12 @@
 
-# Print and return Euclidean norm
+# Print and return squared error
 
-norm <- function(x, y){
+loss <- function(x, y){
   
   # Calculate norm
-  result <- sqrt(x^2 + y^2)
+  error <- abs(x-y)
   
   # Print and return it
-  print(sprintf('Here is the Euclidean norm: %s', as.character(result)))
-  return(result)
+  print(sprintf('Here is the squared error: %s', as.character(error)))
+  return(error)
 }
