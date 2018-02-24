@@ -1,13 +1,13 @@
 
-# Print and return squared error
+# Print and return abs value error
 
 loss <- function(x, y){
   
-  # Calculate squared error
-  error <- (x-y)**2
+  # Calculate absolute value of error
+  error <- abs(x-y)
   
   # Print and return it
-  print(sprintf('Here is the squared error: %s', as.character(error)))
+  print(sprintf('Here is the abs value error: %s', as.character(error)))
   return(error)
 }
 
