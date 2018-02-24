@@ -1,5 +1,5 @@
 
-# Print and return taxicab norm
+# Print and return Euclidean norm
 
 norm <- function(x, y){
   
@@ -7,6 +7,6 @@ norm <- function(x, y){
   result <- sqrt(x^2 + y^2)
   
   # Print and return it
-  print(sprintf('Here is the Euclidean Norm: %s', as.character(result)))
+  print(sprintf('Here is the Euclidean norm: %s', as.character(result)))
   return(result)
 }
